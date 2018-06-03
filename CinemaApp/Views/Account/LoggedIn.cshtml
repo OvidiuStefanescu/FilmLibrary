@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "LoggedIn";
+}
+
+@{ 
+    if (Session["UserID"] != null)
+    {
+        <h1>Welcome, @Session["UserName"].ToString()</h1>
+    }
+}
+        <div class="navbar-collapse collapse">
+            @Html.ActionLink("Personal Library","Library","Home")
+        </div>
+

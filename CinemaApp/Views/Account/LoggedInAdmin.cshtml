@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "LoggedIn";
+}
+
+@{
+    if (Session["UserID"] != null)
+    {
+        <h1>Test for @Session["UserName"].ToString()</h1>
+    }
+}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div>
+        @Html.ActionLink("View user list", "Index")
+    </div>
+    <div>
+        @Html.ActionLink("Add movie", "MovieIndex")
+    </div>
+</body>
+</html>
